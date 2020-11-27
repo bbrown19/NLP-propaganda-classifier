@@ -44,12 +44,14 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-  This is our abstract.
+In this paper, we present an approach to detect propaganda in news media. Given a sentence or headline from an article, we employ Logistic Regression, Naive Bayes and SVM to classify sentences as containing propaganda or not. We evaluate the performance of these models and compare the results to more sophisticated language models such as a long short-term memory networks model (LSTM) and BERT. The main contribution of our work is the size and diversity of our data set. We provide a comparison to previous work done to detect propaganda in news sources, which were limited to narrower data. 
 \end{abstract}
 
 \section{Introduction}
 
+Since its inception, social media has continued to change the way in which we interact with one another.  It is unique in its ability to reach millions of users instantaneously, which presents an increasingly-dangerous challenge: the inevitability of encountering fake news. The propagation of fake news gives rise to social ramifications such as influencing the outcome of elections or increasing fear and intolerance. False and biased news is often presented to promote propaganda, which is the deliberate spreading of ideas with the aim of influencing the opinions and actions of others. One of the dangers of propaganda in fake news is how difficult it is to decide what is real and what is fake - so much so that human users cannot always know. Thus, the ability to accurately detect propagandistic articles using a natural language processing and machine learning models raises an interesting concern and makes one question the responsibility of social media platforms to notify users of an article's inaccuracies. 
 
+In this report, we present sentence-level classification algorithms to detect propaganda in data from multiple news sources. We train Logistic Regression, SVM and Naive Bayes models to provide a baseline classification of the presence or absence of propaganda in a sentence.  We compare these results to the performance of BERT and LSTM, which offer a more complex modelling of language. 
 
 
 \section{Related Works}
